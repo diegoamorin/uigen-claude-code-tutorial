@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(curl -v -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"messages\"\":[{\"\"role\"\":\"\"user\"\",\"\"content\"\":\"\"test\"\",\"\"id\"\":\"\"1\"\"}],\"\"files\"\":{},\"\"projectId\"\":null}' --max-time 15)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"messages\"\":[{\"\"role\"\":\"\"user\"\",\"\"content\"\":\"\"test\"\",\"\"id\"\":\"\"1\"\"}],\"\"files\"\":{},\"\"projectId\"\":null}' --max-time 15)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"messages\"\":[{\"\"role\"\":\"\"user\"\",\"\"content\"\":\"\"test\"\",\"\"id\"\":\"\"1\"\"}],\"\"files\"\":{},\"\"projectId\"\":null}' --max-time 30)",
+      "Bash(curl -s http://localhost:3000 --max-time 5)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"\"\"messages\"\"\"\":[{\"\"\"\"role\"\"\"\":\"\"\"\"user\"\"\"\",\"\"\"\"content\"\"\"\":\"\"\"\"test\"\"\"\",\"\"\"\"id\"\"\"\":\"\"\"\"1\"\"\"\"}],\"\"\"\"files\"\"\"\":{},\"\"\"\"projectId\"\"\"\":null}' --max-time 60 -N)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"messages\"\":[{\"\"role\"\":\"\"user\"\",\"\"content\"\":\"\"test\"\",\"\"id\"\":\"\"1\"\"}],\"\"files\"\":{},\"\"projectId\"\":null}' --max-time 10)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"messages\"\":[{\"\"role\"\":\"\"user\"\",\"\"content\"\":\"\"test\"\",\"\"id\"\":\"\"1\"\"}],\"\"files\"\":{},\"\"projectId\"\":null}' --max-time 20)",
+      "Bash(curl -v http://localhost:3000/api/chat --max-time 5)",
+      "Bash(curl -s http://localhost:3000/ --max-time 5)",
+      "Bash(node -e \":*)",
+      "Bash(npx vitest:*)"
+    ]
+  }
+}
