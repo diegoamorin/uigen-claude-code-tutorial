@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "mcp__playwright",
       "Bash(npm run:*)",
       "Bash(npm install:*)",
       "Bash(curl -v -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"messages\"\":[{\"\"role\"\":\"\"user\"\",\"\"content\"\":\"\"test\"\",\"\"id\"\":\"\"1\"\"}],\"\"files\"\":{},\"\"projectId\"\":null}' --max-time 15)",
@@ -15,7 +16,19 @@
       "Bash(curl -v http://localhost:3000/api/chat --max-time 5)",
       "Bash(curl -s http://localhost:3000/ --max-time 5)",
       "Bash(node -e \":*)",
-      "Bash(npx vitest:*)"
+      "Bash(npx vitest:*)",
+      "Bash(npm audit:*)",
+      "Bash(grep -r \"from ''ai''\" src/ --include=\"*.ts\" --include=\"*.tsx\" -l)",
+      "Bash(npm test:*)",
+      "Bash(start:*)",
+      "Bash(npx playwright:*)",
+      "Bash(where playwright:*)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npm root:*)",
+      "Bash(node -e \"require.resolve\\(''playwright''\\)\")",
+      "Bash(node -e \"require.resolve\\(''@playwright/test''\\)\")",
+      "Bash(node yt-automation.cjs)",
+      "Bash(git:*)"
     ]
   }
 }
